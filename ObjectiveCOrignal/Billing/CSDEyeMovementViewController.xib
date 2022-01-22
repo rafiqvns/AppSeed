@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDEyeMovementViewController">
+            <connections>
+                <outlet property="instructorBtn" destination="5YA-Vz-pKR" id="P0H-ds-Yew"/>
+                <outlet property="positionsView" destination="Dcx-mR-nRy" id="zsN-Nr-f1q"/>
+                <outlet property="studentBtn" destination="2iK-Ma-c1h" id="KhS-R5-PTT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZP-fw-FLg">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Student" id="2iK-Ma-c1h">
+                            <connections>
+                                <action selector="studentButtonPressed:" destination="-1" id="mhz-Oo-h4C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="chY-Zq-W6i"/>
+                        <barButtonItem title="Instructor" id="5YA-Vz-pKR">
+                            <connections>
+                                <action selector="instructorButtonPressed:" destination="-1" id="bwo-BL-Gyv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="byA-ox-6Lr"/>
+                        <barButtonItem title="Email" id="g5F-yo-Rcy">
+                            <connections>
+                                <action selector="emailButtonPressed:" destination="-1" id="d4q-Yp-Dpb"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcx-mR-nRy" customClass="UIImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <subviews>
+                        <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExJ-Cs-CmO">
+                            <rect key="frame" x="31" y="53" width="129" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Following Distance"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="G4c-eu-5GC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMj-wg-cCH">
+                            <rect key="frame" x="243" y="53" width="72" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Lead Time"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="PCh-1S-wuD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOX-sr-LzG">
+                            <rect key="frame" x="143" y="130" width="89" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Intersections"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="LfZ-Kn-w79"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-b0-gkg">
+                            <rect key="frame" x="3" y="218" width="81" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Parked cars"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="Mmh-v3-f5U"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkM-Kk-nij">
+                            <rect key="frame" x="276" y="218" width="81" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Parked cars"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="Kba-aR-ZVc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kiz-aW-gBV">
+                            <rect key="frame" x="3" y="256" width="81" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Pedestrians"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="q8s-U7-muj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-jq-2zZ">
+                            <rect key="frame" x="276" y="265" width="81" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Pedestrians"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="015-Pu-kCN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmz-Ek-31x">
+                            <rect key="frame" x="7" y="416" width="72" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Left Mirror"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="XlQ-dp-N5M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJc-G9-j3y">
+                            <rect key="frame" x="275" y="416" width="82" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Right Mirror"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="yZe-KR-ZWm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2P-tN-PAY">
+                            <rect key="frame" x="161" y="568" width="53" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Gauges"/>
+                            <connections>
+                                <action selector="positionButtonPressed:" destination="-1" eventType="touchUpInside" id="4ml-Nn-x7o"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dcx-mR-nRy" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="0ta-gj-L6Q"/>
+                <constraint firstItem="YZP-fw-FLg" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="4tA-Zs-HR5"/>
+                <constraint firstItem="Dcx-mR-nRy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BPC-JP-wnF"/>
+                <constraint firstItem="YZP-fw-FLg" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="bottom" constant="-44" id="KmK-Qz-DgR"/>
+                <constraint firstItem="Dcx-mR-nRy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eaH-rN-PcP"/>
+                <constraint firstItem="YZP-fw-FLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hNm-JZ-60W"/>
+                <constraint firstItem="YZP-fw-FLg" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="s5N-3c-aGA"/>
+                <constraint firstItem="Dcx-mR-nRy" firstAttribute="bottom" secondItem="YZP-fw-FLg" secondAttribute="top" id="wkJ-Qu-945"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

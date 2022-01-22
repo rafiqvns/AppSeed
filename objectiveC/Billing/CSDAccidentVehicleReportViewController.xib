@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDAccidentVehicleReportViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="AbF-Ex-yxd" id="uJl-cy-gbQ"/>
+                <outlet property="tableView" destination="rFv-D8-0en" id="cbM-zW-a6q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rFv-D8-0en">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tx0-iM-hjo"/>
+                        <outlet property="delegate" destination="-1" id="v4b-8o-Uky"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-Ex-yxd">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Photos" id="QDQ-fX-Iib">
+                            <connections>
+                                <action selector="photosButtonPressed:" destination="-1" id="uOR-uU-6vV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ZIq-68-Cn6"/>
+                        <barButtonItem title="Witnesses" id="NBI-jk-l6j">
+                            <connections>
+                                <action selector="witnessesButtonPressed:" destination="-1" id="axg-L3-8Zu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="h4D-rj-8uC"/>
+                        <barButtonItem title="Other drivers" id="1ED-K5-3IN">
+                            <connections>
+                                <action selector="vehiclesButtonPressed:" destination="-1" id="9et-RJ-Reg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="W2A-9q-mFd"/>
+                        <barButtonItem title="Trailers" id="Whd-tf-qVM">
+                            <connections>
+                                <action selector="trailerButtonPressed:" destination="-1" id="dFQ-4v-hWp"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="bottom" secondItem="AbF-Ex-yxd" secondAttribute="top" id="YK8-D3-9N4"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YlU-Ps-IdQ"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="leading" secondItem="DNZ-PV-vih" secondAttribute="leading" id="eSg-a2-Fox"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hZf-iX-azR"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="trailing" secondItem="DNZ-PV-vih" secondAttribute="trailing" id="j19-TS-gJ0"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="top" secondItem="DNZ-PV-vih" secondAttribute="bottom" constant="-44" id="jaz-sq-ebR"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="bottom" secondItem="DNZ-PV-vih" secondAttribute="bottom" id="m1m-nO-pxR"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="yuc-TM-Jgr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DNZ-PV-vih"/>
+            <point key="canvasLocation" x="325.5" y="278.5"/>
+        </view>
+    </objects>
+</document>

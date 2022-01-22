@@ -1,0 +1,79 @@
+ENGLISH
+
+Certified Safe Driver LLC.
+SOFTWARE LICENSE AGREEMENT FOR Safe vehicle Operation
+SINGLE USE LICENSE
+
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE USING THE
+Certified Safe Driver LLC SOFTWARE. BY USING THE Certified Safe Driver LLC SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE
+TERMS OF THIS LICENSE. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO NOT USE
+THE SOFTWARE. IF YOU DO NOT AGREE TO THE TERMS OF THE LICENSE, YOU MAY RETURN THE
+Certified Safe Driver LLC SOFTWARE TO THE PLACE WHERE YOU OBTAINED IT FOR A REFUND. IF THE Certified Safe Driver LLC
+SOFTWARE WAS ACCESSED ELECTRONICALLY, CLICK "DISAGREE".
+
+IMPORTANT NOTE: To the extent that this software may be used to reproduce materials, it is licensed
+to you only for reproduction of non-copyrighted materials, materials in which you own the copyright, or
+materials you are authorized or legally permitted to reproduce. If you are uncertain about your right to
+copy any material, you should contact your legal advisor.
+
+1. General. The Certified Safe Driver LLC and any third party software, documentation and any fonts accompanying this
+License whether on disk, in read only memory, on any other media or in any other form (collectively the
+"Certified Safe Driver LLC Software") are licensed, not sold, to you by Certified Safe Driver LLC. ("Certified Safe Driver LLC") for use only under the terms of this
+License. Certified Safe Driver LLC and/or its licensors retain ownership of the Certified Safe Driver LLC Software itself and reserves all rights not
+expressly granted to you. The terms of this License will govern any software upgrades provided by Certified Safe Driver LLC
+that replace and/or supplement the original Certified Safe Driver LLC Software product, unless such upgrade is accompanied by
+a separate license in which case the terms of that license will govern.
+
+Title and intellectual property rights in and to any content displayed by or accessed through the Certified Safe Driver LLC
+Software belongs to the respective content owner. Such content may be protected by copyright or other
+intellectual property laws and treaties, and may be subject to terms of use of the third party providing such
+content. This License does not grant you any rights to use such content.
+
+2. Permitted License Uses and Restrictions.
+
+A. Subject to the terms and conditions of this License you are granted a limited non-exclusive license to
+install and use one copy of the Certified Safe Driver LLC Software on each computer owned or controlled by you. To the extent
+that the Certified Safe Driver LLC Software may be used to reproduce materials, such use is limited to reproduction of noncopyrighted
+materials, materials in which you own the copyright, or materials you are authorized or legally
+permitted to reproduce. This License does not allow the Certified Safe Driver LLC Software to exist on more than one computer
+at a time, and you may not make the Certified Safe Driver LLC Software available over a network where it could be used by
+multiple computers at the same time. You may make one copy of the Certified Safe Driver LLC Software in machine-readable
+form for backup purposes only; provided that the backup copy must include all copyright or other proprietary
+notices contained on the original.
+
+In addition to the restrictions stated above, the Certified Safe Driver LLC proprietary libraries ("Certified Safe Driver LLC Web Services") included with the
+Certified Safe Driver LLC Software are only licensed: (i) for use with the Certified Safe Driver LLC Software; and (ii) for your personal use or internal
+business. You may not use the Certified Safe Driver LLC web services for any other purpose, nor may you link, compile or otherwise combine the Certified Safe Driver LLC DLLs with your
+own programs, modify, rent, release, lend, sublicense or otherwise redistribute the Certified Safe Driver LLC code or web services, in whole or in
+part.
+
+B. Certain components of the Certified Safe Driver LLC Software, and third party open source programs included with the Certified Safe Driver LLC
+Software, have been or may be made available by Certified Safe Driver LLC on its Open Source web site (http://www.rco.com/opensource/) (collectively the "Open-Sourced Components"). You may modify or replace
+only these Open-Sourced Components; provided that: (i) the resultant modified Certified Safe Driver LLC Software is used, in
+place of the unmodified Certified Safe Driver LLC Software, on a single computer; and (ii) you otherwise comply with the terms
+of this License and any applicable licensing terms governing use of the Open-Sourced Components. Certified Safe Driver LLC
+is not obligated to provide any updates, maintenance, warranty, technical or other support, or services for
+the resultant modified Certified Safe Driver LLC Software.
+
+You expressly acknowledge that if failure or damage to Certified Safe Driver LLC hardware and or software results from modification of the
+Open-Sourced Components of the Certified Safe Driver LLC Software, such failure or damage is excluded from the terms of the
+Certified Safe Driver LLC hardware and or software warranty.
+
+C. You may not and you agree not to, or to enable others to, copy except as expressly permitted by this
+License), decompile, reverse engineer, disassemble, attempt to derive the source code of, decrypt, modify,
+create derivative works of the Certified Safe Driver LLC Software, or any part thereof (except as and only to the extent any
+foregoing restriction is prohibited by applicable law or to the extent as may be permitted by licensing terms
+governing use of open-sourced components included with the Certified Safe Driver LLC Software). Any attempt to do so is a
+violation of the rights of Certified Safe Driver LLC and its licensors of the Certified Safe Driver LLC Software.
+
+3. Transfer. You may not rent, lease, lend, sell, redistribute or sublicense the Certified Safe Driver LLC Software. You may,
+however, make a one-time permanent transfer of all of your license rights to the Certified Safe Driver LLC Software to another
+party, provided that: (a) the transfer must include all of the Certified Safe Driver LLC Software, including all its component parts,
+original media (if any), printed materials and this License; (b) you do not retain any copies of the Certified Safe Driver LLC
+Software, full or partial, including copies stored on a computer or other storage device; and (c) the party
+receiving the Certified Safe Driver LLC Software reads and agrees to accept the terms and conditions of this License. All
+components of the Certified Safe Driver LLC Software are provided as part of a bundle and may not be separated from the
+bundle and distributed as standalone applications.
+
+
+

@@ -1,0 +1,31 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks! 
+target 'Accident Form' do
+    platform = :ios, '11.1'
+    pod 'MBProgressHUD', '~> 0.9'
+    pod 'DACircularProgress', '~> 2.3'
+    pod 'SDWebImage','~> 3.8'
+    
+    pod 'MWPhotoBrowser', :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git'
+    
+    pod 'BRYXBanner'
+    pod 'ImagePicker'
+    pod 'ImageSlideshow'
+    pod 'ImageSlideshow/SDWebImage'
+    pod 'ImageSlideshow/Alamofire'
+end
+
+target 'CSD' do
+    platform = :ios, '11.1'
+    pod 'MBProgressHUD', '~> 0.9'
+    pod 'DACircularProgress', '~> 2.3'
+    pod 'SDWebImage','~> 3.8'
+    pod 'MWPhotoBrowser', :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git'
+    
+    pod 'BRYXBanner'
+    pod 'ImagePicker'
+    pod 'ImageSlideshow'
+    pod 'ImageSlideshow/SDWebImage'
+    pod 'ImageSlideshow/Alamofire'
+end

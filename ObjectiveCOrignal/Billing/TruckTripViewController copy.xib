@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TruckTripViewController">
+            <connections>
+                <outlet property="ETAButton" destination="xQj-KO-Kwd" id="eFB-gh-HGr"/>
+                <outlet property="POIButton" destination="BXZ-OS-JE8" id="8zb-46-hYe"/>
+                <outlet property="bottomToolbar" destination="JAM-iu-3Vc" id="DMI-7O-kZJ"/>
+                <outlet property="distanceButton" destination="CiV-z4-17x" id="D2K-NS-JpO"/>
+                <outlet property="logsButton" destination="6XP-A3-Zsa" id="QRe-op-vdc"/>
+                <outlet property="mapView" destination="s3m-vG-WsY" id="ymh-Hb-vZJ"/>
+                <outlet property="statusButton" destination="75K-8N-Sh8" id="ek4-1P-ZSJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JAM-iu-3Vc">
+                    <rect key="frame" x="0.0" y="371" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="ETA" id="xQj-KO-Kwd"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Kpc-VW-N7X"/>
+                        <barButtonItem title="Distance" id="CiV-z4-17x">
+                            <connections>
+                                <action selector="distanceButtonPressed:" destination="-1" id="MAQ-9Q-QQG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TMW-Kh-tOu"/>
+                        <barButtonItem title="Status" id="75K-8N-Sh8">
+                            <connections>
+                                <action selector="statusButtonPressed:" destination="-1" id="BF7-tw-ab4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="EEL-lr-duV"/>
+                        <barButtonItem title="POIs" id="BXZ-OS-JE8">
+                            <connections>
+                                <action selector="BOLButtonPressed:" destination="-1" id="sOT-oY-7VC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fAa-EN-O8C"/>
+                        <barButtonItem title="Logs" id="6XP-A3-Zsa">
+                            <connections>
+                                <action selector="logsButtonPressed:" destination="-1" id="Pn3-8c-vPV"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="s3m-vG-WsY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="u6a-AY-oe2"/>
+                    </connections>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="345" y="370"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchMenuViewController">
+            <connections>
+                <outlet property="bgImageView" destination="EpB-iZ-N9K" id="uHx-x8-17w"/>
+                <outlet property="portraitControl" destination="LF1-cO-9vx" id="Ag1-pi-27S"/>
+                <outlet property="portraitScroll" destination="5Oa-Y2-AGx" id="lli-Ri-jS4"/>
+                <outlet property="view" destination="mg8-j9-tYV" id="ced-A3-3fE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mg8-j9-tYV">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MobileOfficeBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-iZ-N9K">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-xK-N4A">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oa-Y2-AGx">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="988"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Pr4-0q-9Yn"/>
+                            </connections>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LF1-cO-9vx">
+                            <rect key="frame" x="0.0" y="988" width="768" height="36"/>
+                            <connections>
+                                <action selector="changePage:" destination="-1" eventType="valueChanged" id="eKf-o2-ePd"/>
+                            </connections>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="LF1-cO-9vx" firstAttribute="trailing" secondItem="BlT-xK-N4A" secondAttribute="trailing" id="1fl-aL-Mlc"/>
+                        <constraint firstItem="5Oa-Y2-AGx" firstAttribute="bottom" secondItem="BlT-xK-N4A" secondAttribute="bottom" constant="-36" id="7YB-bB-2Bn"/>
+                        <constraint firstItem="LF1-cO-9vx" firstAttribute="top" secondItem="5Oa-Y2-AGx" secondAttribute="bottom" id="JFC-fW-pmp"/>
+                        <constraint firstItem="5Oa-Y2-AGx" firstAttribute="leading" secondItem="BlT-xK-N4A" secondAttribute="leading" id="TzS-u0-hta"/>
+                        <constraint firstItem="5Oa-Y2-AGx" firstAttribute="trailing" secondItem="BlT-xK-N4A" secondAttribute="trailing" id="fOv-Wz-dfX"/>
+                        <constraint firstItem="LF1-cO-9vx" firstAttribute="bottom" secondItem="BlT-xK-N4A" secondAttribute="bottom" id="gIB-bg-toQ"/>
+                        <constraint firstItem="5Oa-Y2-AGx" firstAttribute="top" secondItem="BlT-xK-N4A" secondAttribute="top" id="qP1-rd-hHA"/>
+                        <constraint firstItem="LF1-cO-9vx" firstAttribute="leading" secondItem="BlT-xK-N4A" secondAttribute="leading" id="wjr-fH-eEa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="BlT-xK-N4A" firstAttribute="bottom" secondItem="e55-bg-NI5" secondAttribute="bottom" id="YK8-lk-Bah"/>
+                <constraint firstItem="BlT-xK-N4A" firstAttribute="trailing" secondItem="e55-bg-NI5" secondAttribute="trailing" id="e0h-DT-Qog"/>
+                <constraint firstItem="BlT-xK-N4A" firstAttribute="top" secondItem="e55-bg-NI5" secondAttribute="top" constant="-20" id="qNd-x2-GCV"/>
+                <constraint firstItem="BlT-xK-N4A" firstAttribute="leading" secondItem="e55-bg-NI5" secondAttribute="leading" id="zh6-HV-LKb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="e55-bg-NI5"/>
+            <point key="canvasLocation" x="25" y="197"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MobileOfficeBackground.png" width="1024" height="711"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextEditorViewController">
+            <connections>
+                <outlet property="categoryBtn" destination="uIF-uy-QgC" id="vKd-3W-yfV"/>
+                <outlet property="keyboardToolbar" destination="4" id="16"/>
+                <outlet property="textLabel" destination="Bf0-D5-VbS" id="gKr-0W-GfK"/>
+                <outlet property="textLabelSwitch" destination="p46-Ke-9cW" id="lZ9-qI-3qd"/>
+                <outlet property="textView" destination="6" id="15"/>
+                <outlet property="view" destination="5" id="13"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <viewLayoutGuide key="safeArea" id="YbZ-eK-H0V"/>
+            <items>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="7"/>
+                <barButtonItem title="Scan Item" id="8">
+                    <connections>
+                        <action selector="scanPressed:" destination="-1" id="17"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="25" y="52"/>
+        </toolbar>
+        <view contentMode="scaleToFill" id="5">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlA-Ss-84J">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <subviews>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-uy-QgC">
+                            <rect key="frame" x="6" y="0.0" width="363" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <state key="normal" title="Category"/>
+                            <connections>
+                                <action selector="categoryButtonPressed:" destination="-1" eventType="touchUpInside" id="13D-QG-V4c"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-D5-VbS">
+                            <rect key="frame" x="8" y="45" width="279" height="17"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p46-Ke-9cW">
+                            <rect key="frame" x="305" y="38" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                            <rect key="frame" x="6" y="86" width="363" height="156"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="14"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xlA-Ss-84J" firstAttribute="top" secondItem="c25-Pj-fT3" secondAttribute="top" id="GcR-1E-iAS"/>
+                <constraint firstItem="c25-Pj-fT3" firstAttribute="bottom" secondItem="xlA-Ss-84J" secondAttribute="bottom" constant="303" id="P6e-GM-YWz"/>
+                <constraint firstItem="xlA-Ss-84J" firstAttribute="leading" secondItem="c25-Pj-fT3" secondAttribute="leading" id="TEI-mm-yh2"/>
+                <constraint firstItem="xlA-Ss-84J" firstAttribute="trailing" secondItem="c25-Pj-fT3" secondAttribute="trailing" id="WUf-FS-zKn"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="c25-Pj-fT3"/>
+            <point key="canvasLocation" x="439.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module ImageSlideshow {
+  umbrella header "ImageSlideshow-iOS11.1-umbrella.h"
+
+  export *
+  module * { export * }
+}

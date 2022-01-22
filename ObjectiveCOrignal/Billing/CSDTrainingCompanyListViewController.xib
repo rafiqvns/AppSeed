@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDTrainingCompanyListViewController">
+            <connections>
+                <outlet property="search" destination="TVO-Bc-OPe" id="ZYx-EI-Mc7"/>
+                <outlet property="tableView" destination="V5v-X1-aFy" id="dYE-hb-adz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-Bc-OPe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xwo-lg-Wg9"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="V5v-X1-aFy">
+                    <rect key="frame" x="0.0" y="56" width="375" height="567"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yHh-bI-mYT"/>
+                        <outlet property="delegate" destination="-1" id="Bde-BJ-v3X"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSA-Uh-gku">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="hiD-0g-His"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <constraints>
+                <constraint firstItem="V5v-X1-aFy" firstAttribute="bottom" secondItem="KSA-Uh-gku" secondAttribute="top" id="DE5-jc-Pmd"/>
+                <constraint firstItem="V5v-X1-aFy" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="EqJ-eh-58E"/>
+                <constraint firstItem="TVO-Bc-OPe" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="LR1-4M-Cbo"/>
+                <constraint firstItem="KSA-Uh-gku" firstAttribute="top" secondItem="myk-5a-EeR" secondAttribute="bottom" constant="-44" id="MpG-7r-uWS"/>
+                <constraint firstItem="V5v-X1-aFy" firstAttribute="top" secondItem="TVO-Bc-OPe" secondAttribute="bottom" id="Nsj-PQ-v9c"/>
+                <constraint firstItem="TVO-Bc-OPe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a04-lI-FNv"/>
+                <constraint firstItem="KSA-Uh-gku" firstAttribute="bottom" secondItem="myk-5a-EeR" secondAttribute="bottom" id="cm0-3s-UCt"/>
+                <constraint firstItem="V5v-X1-aFy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kpT-Gv-Izh"/>
+                <constraint firstItem="TVO-Bc-OPe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nMx-rK-5rh"/>
+                <constraint firstItem="KSA-Uh-gku" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="tAT-Qt-yUs"/>
+                <constraint firstItem="KSA-Uh-gku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zeI-gq-hzs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="myk-5a-EeR"/>
+            <point key="canvasLocation" x="452.5" y="293.5"/>
+        </view>
+    </objects>
+</document>

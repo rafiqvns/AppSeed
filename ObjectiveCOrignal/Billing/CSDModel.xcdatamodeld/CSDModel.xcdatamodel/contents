@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AccidentIncidentReport" representedClassName="AccidentIncidentReport" parentEntity="Driver" syncable="YES">
+        <attribute name="accidentPrevetionActivity1Employee" optional="YES" attributeType="String"/>
+        <attribute name="accidentPrevetionActivity1Workforce" optional="YES" attributeType="String"/>
+        <attribute name="accidentPrevetionActivity2Employee" optional="YES" attributeType="String"/>
+        <attribute name="accidentPrevetionActivity2Workforce" optional="YES" attributeType="String"/>
+        <attribute name="accidentRouteCause1" optional="YES" attributeType="String"/>
+        <attribute name="accidentRouteCause2" optional="YES" attributeType="String"/>
+        <attribute name="annualSafetyReview" optional="YES" attributeType="String"/>
+        <attribute name="chargeableDetermination" optional="YES" attributeType="String"/>
+        <attribute name="crashType" optional="YES" attributeType="String"/>
+        <attribute name="employeeAccidentHistory" optional="YES" attributeType="String"/>
+        <attribute name="employeesManagerWorkgroupSafetyHistory" optional="YES" attributeType="String"/>
+        <attribute name="employmentDate" optional="YES" attributeType="String"/>
+        <attribute name="followUpTraining" optional="YES" attributeType="String"/>
+        <attribute name="injuryOccurred" optional="YES" attributeType="String"/>
+        <attribute name="level" optional="YES" attributeType="String"/>
+        <attribute name="mentorAssigned" optional="YES" attributeType="String"/>
+        <attribute name="priorTraining" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="workforceNotificationPosted" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AccidentRecord" representedClassName="AccidentRecord" parentEntity="RCOObject" syncable="YES">
+        <attribute name="accidentType" optional="YES" attributeType="String"/>
+        <attribute name="fatilities" optional="YES" attributeType="String"/>
+        <attribute name="injuries" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AccidentTrailerDollie" representedClassName="AccidentTrailerDollie" parentEntity="RCOObject" syncable="YES">
+        <attribute name="dollyType" optional="YES" attributeType="String"/>
+        <attribute name="inspectionCurrent" optional="YES" attributeType="String"/>
+        <attribute name="licensePlateNumber" optional="YES" attributeType="String"/>
+        <attribute name="licenseState" optional="YES" attributeType="String"/>
+        <attribute name="registrationCurrent" optional="YES" attributeType="String"/>
+        <attribute name="trailerMake" optional="YES" attributeType="String"/>
+        <attribute name="trailerSize" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AccidentVehicle" representedClassName="AccidentVehicle" parentEntity="Driver" syncable="YES">
+        <attribute name="assignedLocation" optional="YES" attributeType="String"/>
+        <attribute name="combinationVehicle" optional="YES" attributeType="String"/>
+        <attribute name="companyAddress" optional="YES" attributeType="String"/>
+        <attribute name="companyCity" optional="YES" attributeType="String"/>
+        <attribute name="companyPhone" optional="YES" attributeType="String"/>
+        <attribute name="companyState" optional="YES" attributeType="String"/>
+        <attribute name="companyZipcode" optional="YES" attributeType="String"/>
+        <attribute name="dateofBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descriptionOfDamage" optional="YES" attributeType="String"/>
+        <attribute name="employedBy" optional="YES" attributeType="String"/>
+        <attribute name="insuranceAddress" optional="YES" attributeType="String"/>
+        <attribute name="insuranceAgent" optional="YES" attributeType="String"/>
+        <attribute name="insuranceCity" optional="YES" attributeType="String"/>
+        <attribute name="insuranceCompany" optional="YES" attributeType="String"/>
+        <attribute name="insuranceExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="insurancePhone" optional="YES" attributeType="String"/>
+        <attribute name="insurancePolicyNumber" optional="YES" attributeType="String"/>
+        <attribute name="insuranceState" optional="YES" attributeType="String"/>
+        <attribute name="insuranceZipcode" optional="YES" attributeType="String"/>
+        <attribute name="insuredByDriver" optional="YES" attributeType="String"/>
+        <attribute name="registeredByDriver" optional="YES" attributeType="String"/>
+        <attribute name="registrationAddress" optional="YES" attributeType="String"/>
+        <attribute name="registrationCity" optional="YES" attributeType="String"/>
+        <attribute name="registrationExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="registrationName" optional="YES" attributeType="String"/>
+        <attribute name="registrationNumber" optional="YES" attributeType="String"/>
+        <attribute name="registrationState" optional="YES" attributeType="String"/>
+        <attribute name="registrationZipcode" optional="YES" attributeType="String"/>
+        <attribute name="vehicleMake" optional="YES" attributeType="String"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String"/>
+        <attribute name="vehicleYear" optional="YES" attributeType="String"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AccidentVehicleReport" representedClassName="AccidentVehicleReport" parentEntity="Driver" syncable="YES">
+        <attribute name="accidentChargeableDetermination" optional="YES" attributeType="String"/>
+        <attribute name="accidentCrashType" optional="YES" attributeType="String"/>
+        <attribute name="accidentDegree" optional="YES" attributeType="String"/>
+        <attribute name="accidentDescription" optional="YES" attributeType="String"/>
+        <attribute name="accidentIncidentDescription" optional="YES" attributeType="String"/>
+        <attribute name="accidentIncidentType" optional="YES" attributeType="String"/>
+        <attribute name="accidentInjuryOccurred" optional="YES" attributeType="String"/>
+        <attribute name="accidentLocationSecured" optional="YES" attributeType="String"/>
+        <attribute name="accidentSeverityLevel" optional="YES" attributeType="String"/>
+        <attribute name="accidentSiteDescription" optional="YES" attributeType="String"/>
+        <attribute name="ambulanceOnSite" optional="YES" attributeType="String"/>
+        <attribute name="annualSafetyReview" optional="YES" attributeType="String"/>
+        <attribute name="anotherViehicleInvolved" optional="YES" attributeType="String"/>
+        <attribute name="anyoneElseInjured" optional="YES" attributeType="String"/>
+        <attribute name="coronerOnSite" optional="YES" attributeType="String"/>
+        <attribute name="employeeAccidentHistory" optional="YES" attributeType="String"/>
+        <attribute name="employeesManagerWorkgroupSafetyHistory" optional="YES" attributeType="String"/>
+        <attribute name="employmentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fatilities" optional="YES" attributeType="String"/>
+        <attribute name="fireExtinguisherAvailable" optional="YES" attributeType="String"/>
+        <attribute name="fireExtinguisherUsed" optional="YES" attributeType="String"/>
+        <attribute name="fireonSite" optional="YES" attributeType="String"/>
+        <attribute name="followUpTraining" optional="YES" attributeType="String"/>
+        <attribute name="injured" optional="YES" attributeType="String"/>
+        <attribute name="injuryDegreeOthers" optional="YES" attributeType="String"/>
+        <attribute name="injuryDegreeYour" optional="YES" attributeType="String"/>
+        <attribute name="isFire" optional="YES" attributeType="String"/>
+        <attribute name="isThereASpill" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="mentorAssigned" optional="YES" attributeType="String"/>
+        <attribute name="numberOfInjuries" optional="YES" attributeType="String"/>
+        <attribute name="numberOfVehiclesInvolved" optional="YES" attributeType="String"/>
+        <attribute name="numberOfVehiclesTowed" optional="YES" attributeType="String"/>
+        <attribute name="otherVehicleNeedsTowing" optional="YES" attributeType="String"/>
+        <attribute name="paramedicsOnSite" optional="YES" attributeType="String"/>
+        <attribute name="policeOnSite" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity1ForEmployee" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity1ForWorkforce" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity2ForEmployee" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity2ForWorkforce" optional="YES" attributeType="String"/>
+        <attribute name="priorTraining" optional="YES" attributeType="String"/>
+        <attribute name="rootCause1" optional="YES" attributeType="String"/>
+        <attribute name="rootCause2" optional="YES" attributeType="String"/>
+        <attribute name="safetyReviewDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sizeOfFire" optional="YES" attributeType="String"/>
+        <attribute name="spillContained" optional="YES" attributeType="String"/>
+        <attribute name="spillSize" optional="YES" attributeType="String"/>
+        <attribute name="spillType" optional="YES" attributeType="String"/>
+        <attribute name="transported" optional="YES" attributeType="String"/>
+        <attribute name="transportedToLocation" optional="YES" attributeType="String"/>
+        <attribute name="vehicleNeedsTowing" optional="YES" attributeType="String"/>
+        <attribute name="wasAccidentAvoidable" optional="YES" attributeType="String"/>
+        <attribute name="weatherConditions" optional="YES" attributeType="String"/>
+        <attribute name="whoIsTheFault" optional="YES" attributeType="String"/>
+        <attribute name="workforceNotificationPosted" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AccidentWitness" representedClassName="AccidentWitness" parentEntity="Driver" syncable="YES"/>
+    <entity name="AccidentWorkForceNotification" representedClassName="AccidentWorkForceNotification" parentEntity="RCOObject" syncable="YES">
+        <attribute name="incidentDescription" optional="YES" attributeType="String"/>
+        <attribute name="incidentType" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity1ForEmployee" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity1ForWorkforce" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity2ForEmployee" optional="YES" attributeType="String"/>
+        <attribute name="preventionActivity2ForWorkforce" optional="YES" attributeType="String"/>
+        <attribute name="rootCause1" optional="YES" attributeType="String"/>
+        <attribute name="rootCause2" optional="YES" attributeType="String"/>
+        <attribute name="severityLevel" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AlertGroup" representedClassName="AlertGroup" parentEntity="RCOObject" syncable="YES">
+        <attribute name="attachementFileName" optional="YES" attributeType="String"/>
+        <attribute name="fromEmailAddress" optional="YES" attributeType="String"/>
+        <attribute name="linkedObjectRecordId" optional="YES" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Attachment" representedClassName="Attachment" parentEntity="Photo" syncable="YES"/>
+    <entity name="BillOfLadingDetail" representedClassName="BillOfLadingDetail" parentEntity="InfoUser" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="String"/>
+        <attribute name="binType" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String"/>
+        <attribute name="itemIndex" optional="YES" attributeType="String"/>
+        <attribute name="itemNumber" optional="YES" attributeType="String"/>
+        <attribute name="manufacturerSerialNumber" optional="YES" attributeType="String"/>
+        <attribute name="numberOfBins" optional="YES" attributeType="String"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String"/>
+        <attribute name="productCategory" optional="YES" attributeType="String"/>
+        <attribute name="productType" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="String"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String"/>
+        <attribute name="shipDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tubesInEachBin" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="BillOfLadingHeader" representedClassName="BillOfLadingHeader" parentEntity="InfoUser" syncable="YES">
+        <attribute name="billToAddress" optional="YES" attributeType="String"/>
+        <attribute name="billToCity" optional="YES" attributeType="String"/>
+        <attribute name="billToCompany" optional="YES" attributeType="String"/>
+        <attribute name="billToCountry" optional="YES" attributeType="String"/>
+        <attribute name="billToState" optional="YES" attributeType="String"/>
+        <attribute name="billToZip" optional="YES" attributeType="String"/>
+        <attribute name="carrier" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverFirstName" optional="YES" attributeType="String"/>
+        <attribute name="driverLastName" optional="YES" attributeType="String"/>
+        <attribute name="field" optional="YES" attributeType="String"/>
+        <attribute name="fieldRecordId" optional="YES" attributeType="String"/>
+        <attribute name="fob" optional="YES" attributeType="String"/>
+        <attribute name="freightChargesPaidBy" optional="YES" attributeType="String"/>
+        <attribute name="grower" optional="YES" attributeType="String"/>
+        <attribute name="growerRecordId" optional="YES" attributeType="String"/>
+        <attribute name="harvestType" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="numberOfBins" optional="YES" attributeType="String"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String"/>
+        <attribute name="purchaseOrder" optional="YES" attributeType="String"/>
+        <attribute name="receiveDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="receivedBy" optional="YES" attributeType="String"/>
+        <attribute name="sealNumber" optional="YES" attributeType="String"/>
+        <attribute name="shipDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="shipToAddress" optional="YES" attributeType="String"/>
+        <attribute name="shipToCity" optional="YES" attributeType="String"/>
+        <attribute name="shipToCompany" optional="YES" attributeType="String"/>
+        <attribute name="shipToCountry" optional="YES" attributeType="String"/>
+        <attribute name="shipToState" optional="YES" attributeType="String"/>
+        <attribute name="shipToZip" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temperatureRecordNumber" optional="YES" attributeType="String"/>
+        <attribute name="trailerLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="truckLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="tubesInEachBin" optional="YES" attributeType="String"/>
+        <attribute name="uSMCorDOTNumber" optional="YES" attributeType="String"/>
+        <attribute name="via" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Deleted" representedClassName="Deleted" parentEntity="RCOObject" syncable="YES"/>
+    <entity name="Driver" representedClassName="Driver" parentEntity="InfoUser" syncable="YES">
+        <attribute name="driverLicenseClass" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="homePhone" optional="YES" attributeType="String"/>
+        <attribute name="middleName" optional="YES" attributeType="String"/>
+        <attribute name="mobilePhone" optional="YES" attributeType="String"/>
+        <attribute name="workPhone" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverApplicationDetail" representedClassName="DriverApplicationDetail" parentEntity="RCOObject" syncable="YES">
+        <attribute name="charge" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="penalty" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverApplicationHeader" representedClassName="DriverApplicationHeader" parentEntity="Driver" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="companyAddress" optional="YES" attributeType="String"/>
+        <attribute name="companyCity" optional="YES" attributeType="String"/>
+        <attribute name="companyState" optional="YES" attributeType="String"/>
+        <attribute name="companyZipcode" optional="YES" attributeType="String"/>
+        <attribute name="dateofBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverAddress1HowLong" optional="YES" attributeType="String"/>
+        <attribute name="driverAddress2" optional="YES" attributeType="String"/>
+        <attribute name="driverAddress2HowLong" optional="YES" attributeType="String"/>
+        <attribute name="driverAddress3" optional="YES" attributeType="String"/>
+        <attribute name="driverAddress3HowLong" optional="YES" attributeType="String"/>
+        <attribute name="driverCity2" optional="YES" attributeType="String"/>
+        <attribute name="driverCity3" optional="YES" attributeType="String"/>
+        <attribute name="driverLicensePermitDenied" optional="YES" attributeType="String"/>
+        <attribute name="driverLicensePermitNotes" optional="YES" attributeType="String"/>
+        <attribute name="driverLicensePermitRevokedorSuspended" optional="YES" attributeType="String"/>
+        <attribute name="driverOtherDateFrom" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverOtherDateTo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverOtherEquipment" optional="YES" attributeType="String"/>
+        <attribute name="driverOtherTotalMiles" optional="YES" attributeType="String"/>
+        <attribute name="driverState2" optional="YES" attributeType="String"/>
+        <attribute name="driverState3" optional="YES" attributeType="String"/>
+        <attribute name="driverStraightTruckDateFrom" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverStraightTruckDateTo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverStraightTruckEquipment" optional="YES" attributeType="String"/>
+        <attribute name="driverStraightTruckTotalMiles" optional="YES" attributeType="String"/>
+        <attribute name="driverTractor2TrailersDateFrom" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverTractor2TrailersDateTo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverTractor2TrailersEquipment" optional="YES" attributeType="String"/>
+        <attribute name="driverTractor2TrailersTotalMiles" optional="YES" attributeType="String"/>
+        <attribute name="driverTractorTrailerDateFrom" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverTractorTrailerDateTo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverTractorTrailerEquipment" optional="YES" attributeType="String"/>
+        <attribute name="driverTractorTrailerMilesTotal" optional="YES" attributeType="String"/>
+        <attribute name="driverZipcode2" optional="YES" attributeType="String"/>
+        <attribute name="driverZipcode3" optional="YES" attributeType="String"/>
+        <attribute name="socialSercurityNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverEmployment" representedClassName="DriverEmployment" parentEntity="Driver" syncable="YES">
+        <attribute name="lastEmployerAddress" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerCity" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerName" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerReasonsforleaving" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerState" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerTelephoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="lastEmployerZipcode" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerAddress" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerCity" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerName" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerReasonsforleaving" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerState" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerTelephoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="secondLastEmployerZipcode" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerAddress" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerCity" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerName" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerReasonsforleaving" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerState" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerTelephoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="thirdLastEmployerZipcode" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverMedicalForm" representedClassName="DriverMedicalForm" parentEntity="Driver" syncable="YES">
+        <attribute name="abilitytopowergraspno" optional="YES" attributeType="String"/>
+        <attribute name="abilitytopowergraspyes" optional="YES" attributeType="String"/>
+        <attribute name="amputationfull" optional="YES" attributeType="String"/>
+        <attribute name="amputationhand" optional="YES" attributeType="String"/>
+        <attribute name="amputationpartial" optional="YES" attributeType="String"/>
+        <attribute name="amputationupperlimb" optional="YES" attributeType="String"/>
+        <attribute name="appropriateprosthesisno" optional="YES" attributeType="String"/>
+        <attribute name="appropriateprosthesisyes" optional="YES" attributeType="String"/>
+        <attribute name="appropriateterminaldeviceno" optional="YES" attributeType="String"/>
+        <attribute name="appropriateterminaldeviceyes" optional="YES" attributeType="String"/>
+        <attribute name="boardCertifiedno" optional="YES" attributeType="String"/>
+        <attribute name="boardCertifiedyes" optional="YES" attributeType="String"/>
+        <attribute name="boardEligibleno" optional="YES" attributeType="String"/>
+        <attribute name="boardEligibleyes" optional="YES" attributeType="String"/>
+        <attribute name="carrierName" optional="YES" attributeType="String"/>
+        <attribute name="doctorsName" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorsabruptduty" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorsdelayenroute" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorslongtrips" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorsothers" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorsshortnotice" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorssleepdeprivation" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorstemperature" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorstightdelivery" optional="YES" attributeType="String"/>
+        <attribute name="environmentalFactorsunbalancedwork" optional="YES" attributeType="String"/>
+        <attribute name="hasleftamputation" optional="YES" attributeType="String"/>
+        <attribute name="hasleftimpairment" optional="YES" attributeType="String"/>
+        <attribute name="haslowerlimbamputation" optional="YES" attributeType="String"/>
+        <attribute name="haslowerlimbimpairment" optional="YES" attributeType="String"/>
+        <attribute name="hasrightamputation" optional="YES" attributeType="String"/>
+        <attribute name="hasrightimpairment" optional="YES" attributeType="String"/>
+        <attribute name="hasupperamputation" optional="YES" attributeType="String"/>
+        <attribute name="hasupperimpairment" optional="YES" attributeType="String"/>
+        <attribute name="impairmenthand" optional="YES" attributeType="String"/>
+        <attribute name="impairmentupperlimb" optional="YES" attributeType="String"/>
+        <attribute name="medicalconditionsinterferewithtasksexplanation" optional="YES" attributeType="String"/>
+        <attribute name="medicalconditionsinterferewithtasksno" optional="YES" attributeType="String"/>
+        <attribute name="medicalconditionsinterferewithtasksyes" optional="YES" attributeType="String"/>
+        <attribute name="medicalfindingsandevaluation" optional="YES" attributeType="String"/>
+        <attribute name="mobilityleftlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="mobilityleftupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="mobilityno" optional="YES" attributeType="String"/>
+        <attribute name="mobilityrightlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="mobilityrightupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="mobilitytrunk" optional="YES" attributeType="String"/>
+        <attribute name="mobilityyes" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthleftlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthleftupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthno" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthrightlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthrightupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="muscleStrengthyes" optional="YES" attributeType="String"/>
+        <attribute name="orthopedicsurgeon" optional="YES" attributeType="String"/>
+        <attribute name="physiatrist" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandbackingandparking" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandbrakeacceleratoroperation" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandcargohandling" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandchangingtires" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandfullyautomatic" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandGearShifting" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandNumberspeedtransmission" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandsemiautomatic" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandsteeringwheelcontrol" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandvarioustasks" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandvehicleinspections" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandvehiclemodifications" optional="YES" attributeType="String"/>
+        <attribute name="physicalDemandvehiclemodnotes" optional="YES" attributeType="String"/>
+        <attribute name="physicianaddress" optional="YES" attributeType="String"/>
+        <attribute name="physicianalternatenumber" optional="YES" attributeType="String"/>
+        <attribute name="physiciancity" optional="YES" attributeType="String"/>
+        <attribute name="physiciandate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="physicianfirstname" optional="YES" attributeType="String"/>
+        <attribute name="physicianlastname" optional="YES" attributeType="String"/>
+        <attribute name="physicianmiddlename" optional="YES" attributeType="String"/>
+        <attribute name="physicianstate" optional="YES" attributeType="String"/>
+        <attribute name="physiciantelephonenumber" optional="YES" attributeType="String"/>
+        <attribute name="physicianzipcode" optional="YES" attributeType="String"/>
+        <attribute name="powergripleftno" optional="YES" attributeType="String"/>
+        <attribute name="powergripleftyes" optional="YES" attributeType="String"/>
+        <attribute name="powergriprightno" optional="YES" attributeType="String"/>
+        <attribute name="powergriprightyes" optional="YES" attributeType="String"/>
+        <attribute name="prosthesisfitsno" optional="YES" attributeType="String"/>
+        <attribute name="prosthesisfitsyes" optional="YES" attributeType="String"/>
+        <attribute name="prostheticclinicaldescription" optional="YES" attributeType="String"/>
+        <attribute name="prostheticrecommendations" optional="YES" attributeType="String"/>
+        <attribute name="sPEApplicantName" optional="YES" attributeType="String"/>
+        <attribute name="stabilityleftlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="stabilityleftupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="stabilityno" optional="YES" attributeType="String"/>
+        <attribute name="stabilityrightlowerextremity" optional="YES" attributeType="String"/>
+        <attribute name="stabilityrightupperextremity" optional="YES" attributeType="String"/>
+        <attribute name="stabilitytrunk" optional="YES" attributeType="String"/>
+        <attribute name="stabilityyes" optional="YES" attributeType="String"/>
+        <attribute name="surgicalreconstructionno" optional="YES" attributeType="String"/>
+        <attribute name="surgicalreconstructionyes" optional="YES" attributeType="String"/>
+        <attribute name="useprostheticproficientlyno" optional="YES" attributeType="String"/>
+        <attribute name="useprostheticproficientlyyes" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeclimbinginandoutoftruck" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypelongrelaydrives" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeMotorHome10klbs" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypenightsawayfromhome" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypenumberofnightsawayfromhome" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypePassengerBus" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypePassengerMotorCoach" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypePassengerSeatingCapacity" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypePassengerVan" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypePassengerVehicle" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeshortrelaydrives" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypesleeperteamdrives" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypestraightthrough" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeStraightTruck" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeTractorTrailer" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeTrucklessthan10klbsandhazardousmaterials" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeTruckover10klbs" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeTruckTrailerover10klbs" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverSkillPerformanceEvaluation" representedClassName="DriverSkillPerformanceEvaluation" parentEntity="Driver" syncable="YES">
+        <attribute name="applicationTypeJoint" optional="YES" attributeType="String"/>
+        <attribute name="applicationTypeUnilateral" optional="YES" attributeType="String"/>
+        <attribute name="averageperiodofdrivingtime" optional="YES" attributeType="String"/>
+        <attribute name="descriptionofimpairmentoramputation" optional="YES" attributeType="String"/>
+        <attribute name="descriptionoftrailers" optional="YES" attributeType="String"/>
+        <attribute name="driverSignatureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="numberofTrailers" optional="YES" attributeType="String"/>
+        <attribute name="numberofyearsdrivingallvehicletypes" optional="YES" attributeType="String"/>
+        <attribute name="numberofyearsdrivingvehicletype" optional="YES" attributeType="String"/>
+        <attribute name="sex" optional="YES" attributeType="String"/>
+        <attribute name="statesofoperation" optional="YES" attributeType="String"/>
+        <attribute name="typeofcargo" optional="YES" attributeType="String"/>
+        <attribute name="typeofoperation" optional="YES" attributeType="String"/>
+        <attribute name="typeofprosthesisworn" optional="YES" attributeType="String"/>
+        <attribute name="vehicleMake" optional="YES" attributeType="String"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String"/>
+        <attribute name="vehicleModifications" optional="YES" attributeType="String"/>
+        <attribute name="vehicleNumberofForwardSpeeds" optional="YES" attributeType="String"/>
+        <attribute name="vehicleRearAxleSpeed" optional="YES" attributeType="String"/>
+        <attribute name="vehicleSeatingCapacity" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTransmissionType" optional="YES" attributeType="String"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeBrakeSystem" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="vehicleTypeSteeringSystem" optional="YES" attributeType="String"/>
+        <attribute name="vehicleYear" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverTurn" representedClassName="DriverTurn" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorId" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="masterMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="turnType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverViolationDetail" representedClassName="DriverViolationDetail" parentEntity="RCOObject" syncable="YES">
+        <attribute name="violationLocation" optional="YES" attributeType="String"/>
+        <attribute name="violationOffense" optional="YES" attributeType="String"/>
+        <attribute name="violationtypeofvehicle" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DriverViolationHeader" representedClassName="DriverViolationHeader" parentEntity="Driver" syncable="YES">
+        <attribute name="carrierAddress" optional="YES" attributeType="String"/>
+        <attribute name="carrierName" optional="YES" attributeType="String"/>
+        <attribute name="employmentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="reviewedBy" optional="YES" attributeType="String"/>
+        <attribute name="reviewedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="socialSercurityNumber" optional="YES" attributeType="String"/>
+        <attribute name="terminalCity" optional="YES" attributeType="String"/>
+        <attribute name="terminalState" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="violationsthisyear" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="EyeMovement" representedClassName="EyeMovement" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="eyeLeadCounter" optional="YES" attributeType="String"/>
+        <attribute name="eyeMovement" optional="YES" attributeType="String"/>
+        <attribute name="finishDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="followTimeCounter" optional="YES" attributeType="String"/>
+        <attribute name="frontCounter" optional="YES" attributeType="String"/>
+        <attribute name="gaugesCounter" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="intersectionsCounter" optional="YES" attributeType="String"/>
+        <attribute name="leftMirrorCounter" optional="YES" attributeType="String"/>
+        <attribute name="masterMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="parkedCarsCounter" optional="YES" attributeType="String"/>
+        <attribute name="pedestriansCounter" optional="YES" attributeType="String"/>
+        <attribute name="rearCounter" optional="YES" attributeType="String"/>
+        <attribute name="rightMirrorCounter" optional="YES" attributeType="String"/>
+        <attribute name="startTimes" optional="YES" attributeType="String"/>
+        <attribute name="stopTimes" optional="YES" attributeType="String"/>
+        <attribute name="studentEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FormI9" representedClassName="FormI9" parentEntity="RCOObject" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String"/>
+        <attribute name="alienRegistrationNumber" optional="YES" attributeType="String"/>
+        <attribute name="apartmentNumber" optional="YES" attributeType="String"/>
+        <attribute name="authorizedAlien" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="authorizedAlienToWorkUntilDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="cityOrTown" optional="YES" attributeType="String"/>
+        <attribute name="countryOfIssuance" optional="YES" attributeType="String"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateReceived" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="employeesFirstDayOfEmployment" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="employerFirstName" optional="YES" attributeType="String"/>
+        <attribute name="employerLastName" optional="YES" attributeType="String"/>
+        <attribute name="employersBusinessAddress" optional="YES" attributeType="String"/>
+        <attribute name="employersBusinessName" optional="YES" attributeType="String"/>
+        <attribute name="employersCityOrTown" optional="YES" attributeType="String"/>
+        <attribute name="employerSignature" optional="YES" attributeType="String"/>
+        <attribute name="employerSignatureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="employersState" optional="YES" attributeType="String"/>
+        <attribute name="employersZipCode" optional="YES" attributeType="String"/>
+        <attribute name="employerTitle" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="foreignPassportNumber" optional="YES" attributeType="String"/>
+        <attribute name="formAdmisionNumber" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="lastNameFirstNameMiddleName" optional="YES" attributeType="String"/>
+        <attribute name="listA11DocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="listA12IssuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="listA13DocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="listA14ExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="listA21DocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="listA22IssuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="listA23DocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="listA24ExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="listA31DocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="listA32IssuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="listA33DocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="listA34ExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="listB11DocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="listB12IssuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="listB13DocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="listB14ExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="listC11DocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="listC12IssuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="listC13DocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="listC14ExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="middleName" optional="YES" attributeType="String"/>
+        <attribute name="otherNamesUsed" optional="YES" attributeType="String"/>
+        <attribute name="permanentResident" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="preparerAddress" optional="YES" attributeType="String"/>
+        <attribute name="preparerCityOrTown" optional="YES" attributeType="String"/>
+        <attribute name="preparerFirstName" optional="YES" attributeType="String"/>
+        <attribute name="preparerLastName" optional="YES" attributeType="String"/>
+        <attribute name="preparerState" optional="YES" attributeType="String"/>
+        <attribute name="preparerZipCode" optional="YES" attributeType="String"/>
+        <attribute name="rehireDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="rehireDocumentNumber" optional="YES" attributeType="String"/>
+        <attribute name="rehireDocumentTitle" optional="YES" attributeType="String"/>
+        <attribute name="rehireEmployerPrintName" optional="YES" attributeType="String"/>
+        <attribute name="rehireEmployerSignature" optional="YES" attributeType="String"/>
+        <attribute name="rehireEmployerSignatureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="rehireExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="rehireFirstName" optional="YES" attributeType="String"/>
+        <attribute name="rehireLastName" optional="YES" attributeType="String"/>
+        <attribute name="rehireMiddleName" optional="YES" attributeType="String"/>
+        <attribute name="signatureEmployeeDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="signatureOfEmployee" optional="YES" attributeType="String"/>
+        <attribute name="signatureOfPreparer" optional="YES" attributeType="String"/>
+        <attribute name="signatureOfPreparerDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="socialSecurityNumber" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="usCitizen" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="usNoncitizenNational" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="zipCode" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InfoGeoLocation" representedClassName="InfoGeoLocation" isAbstract="YES" parentEntity="RCOObject" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InfoUser" representedClassName="InfoUser" isAbstract="YES" parentEntity="InfoGeoLocation" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="userRecordId" optional="YES" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InvoiceDetail" representedClassName="InvoiceDetail" parentEntity="InfoUser">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="customerJob" optional="YES" attributeType="String"/>
+        <attribute name="customerRecordId" optional="YES" attributeType="String"/>
+        <attribute name="deviceId" optional="YES" attributeType="String"/>
+        <attribute name="freightAmount" optional="YES" attributeType="String"/>
+        <attribute name="invoiceDetailDescription" optional="YES" attributeType="String"/>
+        <attribute name="invoiceNumber" optional="YES" attributeType="String"/>
+        <attribute name="itemNumber" optional="YES" attributeType="String"/>
+        <attribute name="items" optional="YES" attributeType="String"/>
+        <attribute name="mobileInvoiceNumber" optional="YES" attributeType="String"/>
+        <attribute name="numberOfPackages" optional="YES" attributeType="String"/>
+        <attribute name="palletSerialNumber" optional="YES" attributeType="String"/>
+        <attribute name="priceCode" optional="YES" attributeType="String"/>
+        <attribute name="priceEach" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="processed" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="String"/>
+        <attribute name="quantityDelivered" optional="YES" attributeType="String"/>
+        <attribute name="quantityLastShipped" optional="YES" attributeType="String"/>
+        <attribute name="quantityNotPicked" optional="YES" attributeType="String"/>
+        <attribute name="quantityNotShipped" optional="YES" attributeType="String"/>
+        <attribute name="quantityPicked" optional="YES" attributeType="String"/>
+        <attribute name="quantityShipped" optional="YES" attributeType="String"/>
+        <attribute name="shippingWeight" optional="YES" attributeType="String"/>
+        <attribute name="shipToname" optional="YES" attributeType="String"/>
+        <attribute name="shipZone" optional="YES" attributeType="String"/>
+        <attribute name="storeName" optional="YES" attributeType="String"/>
+        <attribute name="storeNumber" optional="YES" attributeType="String"/>
+        <attribute name="tax" optional="YES" attributeType="String"/>
+        <userInfo/>
+    </entity>
+    <entity name="InvoiceHeader" representedClassName="InvoiceHeader" parentEntity="InfoUser">
+        <attribute name="billOfLadingRecordId" optional="YES" attributeType="String"/>
+        <attribute name="billToAddress" optional="YES" attributeType="String"/>
+        <attribute name="billToCity" optional="YES" attributeType="String"/>
+        <attribute name="billToCityStateZip" optional="YES" attributeType="String"/>
+        <attribute name="billToCompany" optional="YES" attributeType="String"/>
+        <attribute name="billToCountry" optional="YES" attributeType="String"/>
+        <attribute name="billToName" optional="YES" attributeType="String"/>
+        <attribute name="billToState" optional="YES" attributeType="String"/>
+        <attribute name="billToStoreNumber" optional="YES" attributeType="String"/>
+        <attribute name="billToZipcode" optional="YES" attributeType="String"/>
+        <attribute name="carrier" optional="YES" attributeType="String"/>
+        <attribute name="checkNumber" optional="YES" attributeType="String"/>
+        <attribute name="csvFormat" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="customerJob" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="customerRecordId" optional="YES" attributeType="String"/>
+        <attribute name="dateShip" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fob" optional="YES" attributeType="String"/>
+        <attribute name="ihShipStatus" optional="YES" attributeType="String"/>
+        <attribute name="ihStoreName" optional="YES" attributeType="String"/>
+        <attribute name="ihStoreNumber" optional="YES" attributeType="String"/>
+        <attribute name="invoiceNumber" optional="YES" attributeType="String"/>
+        <attribute name="isSale" optional="YES" attributeType="String"/>
+        <attribute name="locationRecordId" optional="YES" attributeType="String"/>
+        <attribute name="mobileInvoiceNumber" optional="YES" attributeType="String"/>
+        <attribute name="numberOfPackages" optional="YES" attributeType="String"/>
+        <attribute name="paymentMethod" optional="YES" attributeType="String"/>
+        <attribute name="po" optional="YES" attributeType="String"/>
+        <attribute name="processedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="processedDateStr" optional="YES" attributeType="String"/>
+        <attribute name="processName" optional="YES" attributeType="String"/>
+        <attribute name="referenceNumber" optional="YES" attributeType="String"/>
+        <attribute name="rep" optional="YES" attributeType="String"/>
+        <attribute name="resellerCode" optional="YES" attributeType="String"/>
+        <attribute name="salesTaxRate" optional="YES" attributeType="String"/>
+        <attribute name="ship" optional="YES" attributeType="String"/>
+        <attribute name="shipStatus" optional="YES" attributeType="String"/>
+        <attribute name="shipToAddress" optional="YES" attributeType="String"/>
+        <attribute name="shipToCity" optional="YES" attributeType="String"/>
+        <attribute name="shipToCityStateZip" optional="YES" attributeType="String"/>
+        <attribute name="shipToCompany" optional="YES" attributeType="String"/>
+        <attribute name="shipToCountry" optional="YES" attributeType="String"/>
+        <attribute name="shipToName" optional="YES" attributeType="String"/>
+        <attribute name="shipToState" optional="YES" attributeType="String"/>
+        <attribute name="shipToStoreNumber" optional="YES" attributeType="String"/>
+        <attribute name="shipToZip" optional="YES" attributeType="String"/>
+        <attribute name="shipZone" optional="YES" attributeType="String"/>
+        <attribute name="subtotalValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="taxValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="terms" optional="YES" attributeType="String"/>
+        <attribute name="totalValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="trackingNumber" optional="YES" attributeType="String"/>
+        <attribute name="transactionId" optional="YES" attributeType="String"/>
+        <attribute name="transactionState" optional="YES" attributeType="String"/>
+        <attribute name="transactionStatus" optional="YES" attributeType="String"/>
+        <attribute name="via" optional="YES" attributeType="String"/>
+        <userInfo/>
+    </entity>
+    <entity name="Note" representedClassName="Note" parentEntity="Photo" syncable="YES"/>
+    <entity name="Part" representedClassName="Part" parentEntity="RCOObject">
+        <attribute name="categoryName1" optional="YES" attributeType="String"/>
+        <attribute name="categoryName2" optional="YES" attributeType="String"/>
+        <attribute name="categoryName3" optional="YES" attributeType="String"/>
+        <attribute name="categoryValue1" optional="YES" attributeType="String"/>
+        <attribute name="categoryValue2" optional="YES" attributeType="String"/>
+        <attribute name="categoryValue3" optional="YES" attributeType="String"/>
+        <attribute name="cost" optional="YES" attributeType="String"/>
+        <attribute name="kitName" optional="YES" attributeType="String"/>
+        <attribute name="kitNumber" optional="YES" attributeType="String"/>
+        <attribute name="locationType" optional="YES" attributeType="String"/>
+        <attribute name="manufacturereSerialNumber" optional="YES" attributeType="String"/>
+        <attribute name="moveTimestamp" optional="YES" attributeType="String"/>
+        <attribute name="numberOfReviews" optional="YES" attributeType="String"/>
+        <attribute name="partDeployment" optional="YES" attributeType="String" versionHashModifier="2014-01-31"/>
+        <attribute name="partDescription" optional="YES" attributeType="String"/>
+        <attribute name="partKit" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="partLocation" optional="YES" attributeType="String"/>
+        <attribute name="partName" optional="YES" attributeType="String"/>
+        <attribute name="partNumber" optional="YES" attributeType="String"/>
+        <attribute name="partPreferredVendor" optional="YES" attributeType="String"/>
+        <attribute name="partQuantityAvailable" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityCounted" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityMaxOnHand" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityMinOnHand" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityOnHand" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityOnHold" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityPicked" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="partQuantityRequired" optional="YES" attributeType="String"/>
+        <attribute name="partTracking" optional="YES" attributeType="String"/>
+        <attribute name="partVendorName" optional="YES" attributeType="String"/>
+        <attribute name="ptn" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="String"/>
+        <attribute name="receivePartDetail" optional="YES" attributeType="String"/>
+        <attribute name="salesPrice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="salesTaxCode" optional="YES" attributeType="String"/>
+        <attribute name="storeName" optional="YES" attributeType="String"/>
+        <attribute name="storeNumber" optional="YES" attributeType="String"/>
+        <attribute name="txMedallionId" optional="YES" attributeType="String"/>
+        <attribute name="txPIMId" optional="YES" attributeType="String"/>
+        <attribute name="txVIN" optional="YES" attributeType="String"/>
+        <attribute name="um" optional="YES" attributeType="String"/>
+        <attribute name="vehicleLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="vendorPrice" optional="YES" attributeType="String"/>
+        <userInfo/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" parentEntity="InfoGeoLocation" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="parentBarcode" optional="YES" attributeType="String"/>
+        <attribute name="parentObjectId" optional="YES" attributeType="String"/>
+        <attribute name="parentObjectType" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RCOCloud" representedClassName="RCOCloud" parentEntity="RCOObject" syncable="YES">
+        <attribute name="cloudStorage" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RCOCloudEFile" representedClassName="RCOCloudEFile" parentEntity="RCOCloud" syncable="YES">
+        <attribute name="cloudFolder" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RCOCloudFolder" representedClassName="RCOCloudFolder" parentEntity="RCOCloud" syncable="YES"/>
+    <entity name="RCOObject" representedClassName="RCOObject" isAbstract="YES" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="cat1" optional="YES" attributeType="String"/>
+        <attribute name="creatorRecordId" optional="YES" attributeType="String"/>
+        <attribute name="dateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deviceId" optional="YES" attributeType="String"/>
+        <attribute name="fileIsDownloading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="fileIsUploading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="fileLog" optional="YES" attributeType="String"/>
+        <attribute name="fileNeedsDownloading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="fileNeedsUploading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="functionalGroupName" optional="YES" attributeType="String"/>
+        <attribute name="functionalGroupObjectId" optional="YES" attributeType="String"/>
+        <attribute name="itemType" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <attribute name="objectDescription" optional="YES" attributeType="String"/>
+        <attribute name="objectIsDownloading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="objectIsUploading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="objectLog" optional="YES" attributeType="String"/>
+        <attribute name="objectNeedsDeleting" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO"/>
+        <attribute name="objectNeedsDownloading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="objectNeedsUploading" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="processed" optional="YES" attributeType="String"/>
+        <attribute name="rcoBarcode" optional="YES" attributeType="String"/>
+        <attribute name="rcoBarcodeParent" optional="YES" attributeType="String"/>
+        <attribute name="rcoFileSize" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="rcoFileTimestamp" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="rcoFileType" optional="YES" attributeType="String"/>
+        <attribute name="rcoMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="rcoObjectClass" optional="YES" attributeType="String"/>
+        <attribute name="rcoObjectId" attributeType="String"/>
+        <attribute name="rcoObjectParentId" optional="YES" attributeType="String"/>
+        <attribute name="rcoObjectSearchString" optional="YES" attributeType="String"/>
+        <attribute name="rcoObjectTimestamp" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="rcoObjectType" optional="YES" attributeType="String"/>
+        <attribute name="rcoRecordId" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SignatureDetail" representedClassName="SignatureDetail" parentEntity="RCOObject" syncable="YES">
+        <attribute name="documentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="documentTitle" optional="YES" attributeType="String"/>
+        <attribute name="documentType" optional="YES" attributeType="String"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="issuingAuthority" optional="YES" attributeType="String"/>
+        <attribute name="parentObjectId" optional="YES" attributeType="String"/>
+        <attribute name="parentObjectType" optional="YES" attributeType="String"/>
+        <attribute name="recordDescription" optional="YES" attributeType="String"/>
+        <attribute name="reviewedBy" optional="YES" attributeType="String"/>
+        <attribute name="reviewedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="signatureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="signatureName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TestDataDetail" representedClassName="TestDataDetail" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="employeeRecordId" optional="YES" attributeType="String"/>
+        <attribute name="equipmentUsedMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="leg" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="odometer" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="testItemName" optional="YES" attributeType="String"/>
+        <attribute name="testItemNumber" optional="YES" attributeType="String"/>
+        <attribute name="testName" optional="YES" attributeType="String"/>
+        <attribute name="testNumber" optional="YES" attributeType="String"/>
+        <attribute name="testSectionName" optional="YES" attributeType="String"/>
+        <attribute name="testSectionNumber" optional="YES" attributeType="String"/>
+        <attribute name="testTeachingString" optional="YES" attributeType="String"/>
+        <attribute name="trailerNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TestDataHeader" representedClassName="TestDataHeader" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="correctiveLensRequired" optional="YES" attributeType="String"/>
+        <attribute name="department" optional="YES" attributeType="String"/>
+        <attribute name="disqualifiedRemarks" optional="YES" attributeType="String"/>
+        <attribute name="dotExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dotNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverHistoryReviewed" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseClass" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="driverName" optional="YES" attributeType="String"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="employeeRecordId" optional="YES" attributeType="String"/>
+        <attribute name="endDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endorsements" optional="YES" attributeType="String"/>
+        <attribute name="equipmentClean" optional="YES" attributeType="String"/>
+        <attribute name="equipmentReady" optional="YES" attributeType="String"/>
+        <attribute name="evaluatorName" optional="YES" attributeType="String"/>
+        <attribute name="evaluatorTitle" optional="YES" attributeType="String"/>
+        <attribute name="finishOdometer" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="keysReady" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="medicalCardExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="miles" optional="YES" attributeType="String"/>
+        <attribute name="numberofTrailers" optional="YES" attributeType="String"/>
+        <attribute name="observerFirstName" optional="YES" attributeType="String"/>
+        <attribute name="observerLastName" optional="YES" attributeType="String"/>
+        <attribute name="onTime" optional="YES" attributeType="String"/>
+        <attribute name="pauseDateTimes" optional="YES" attributeType="String"/>
+        <attribute name="pointsPossible" optional="YES" attributeType="String"/>
+        <attribute name="pointsReceived" optional="YES" attributeType="String"/>
+        <attribute name="powerUnit" optional="YES" attributeType="String"/>
+        <attribute name="qualifiedYesNo" optional="YES" attributeType="String"/>
+        <attribute name="restrictions" optional="YES" attributeType="String"/>
+        <attribute name="routeNumber" optional="YES" attributeType="String"/>
+        <attribute name="startDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startOdometer" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="testDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="testMiles" optional="YES" attributeType="String"/>
+        <attribute name="testRemarks" optional="YES" attributeType="String"/>
+        <attribute name="testResult" optional="YES" attributeType="String"/>
+        <attribute name="testState" optional="YES" attributeType="String"/>
+        <attribute name="timecardSystemReady" optional="YES" attributeType="String"/>
+        <attribute name="trailerLength" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TestForm" representedClassName="TestForm" parentEntity="RCOObject" syncable="YES">
+        <attribute name="categName1" optional="YES" attributeType="String"/>
+        <attribute name="categName2" optional="YES" attributeType="String"/>
+        <attribute name="categName3" optional="YES" attributeType="String"/>
+        <attribute name="categName4" optional="YES" attributeType="String"/>
+        <attribute name="categName5" optional="YES" attributeType="String"/>
+        <attribute name="categName6" optional="YES" attributeType="String"/>
+        <attribute name="categName7" optional="YES" attributeType="String"/>
+        <attribute name="categName8" optional="YES" attributeType="String"/>
+        <attribute name="categName9" optional="YES" attributeType="String"/>
+        <attribute name="categName10" optional="YES" attributeType="String"/>
+        <attribute name="categName11" optional="YES" attributeType="String"/>
+        <attribute name="categName12" optional="YES" attributeType="String"/>
+        <attribute name="categName13" optional="YES" attributeType="String"/>
+        <attribute name="categName14" optional="YES" attributeType="String"/>
+        <attribute name="categName15" optional="YES" attributeType="String"/>
+        <attribute name="categName16" optional="YES" attributeType="String"/>
+        <attribute name="categName17" optional="YES" attributeType="String"/>
+        <attribute name="categValue1" optional="YES" attributeType="String"/>
+        <attribute name="categValue2" optional="YES" attributeType="String"/>
+        <attribute name="categValue3" optional="YES" attributeType="String"/>
+        <attribute name="categValue4" optional="YES" attributeType="String"/>
+        <attribute name="categValue5" optional="YES" attributeType="String"/>
+        <attribute name="categValue6" optional="YES" attributeType="String"/>
+        <attribute name="categValue7" optional="YES" attributeType="String"/>
+        <attribute name="categValue8" optional="YES" attributeType="String"/>
+        <attribute name="categValue9" optional="YES" attributeType="String"/>
+        <attribute name="categValue10" optional="YES" attributeType="String"/>
+        <attribute name="categValue11" optional="YES" attributeType="String"/>
+        <attribute name="categValue12" optional="YES" attributeType="String"/>
+        <attribute name="categValue13" optional="YES" attributeType="String"/>
+        <attribute name="categValue14" optional="YES" attributeType="String"/>
+        <attribute name="categValue15" optional="YES" attributeType="String"/>
+        <attribute name="categValue16" optional="YES" attributeType="String"/>
+        <attribute name="categValue17" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemNumber" optional="YES" attributeType="String"/>
+        <attribute name="pointsPossible" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="sectionNumber" optional="YES" attributeType="String"/>
+        <attribute name="testTeachingString" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TestSetup" representedClassName="TestSetup" parentEntity="RCOObject" syncable="YES">
+        <attribute name="numberOfSections" optional="YES" attributeType="String"/>
+        <attribute name="possiblePoints" optional="YES" attributeType="String"/>
+        <attribute name="possibleSections" optional="YES" attributeType="String"/>
+        <attribute name="sectionTitles" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Timestamp" representedClassName="Timestamp" parentEntity="RCOObject">
+        <userInfo/>
+    </entity>
+    <entity name="TrailerLoadingDetail" representedClassName="TrailerLoadingDetail" parentEntity="RCOObject" syncable="YES">
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverFirstName" optional="YES" attributeType="String"/>
+        <attribute name="driverLastName" optional="YES" attributeType="String"/>
+        <attribute name="driverRecordId" optional="YES" attributeType="String"/>
+        <attribute name="invoiceDetailRecordId" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemNumber" optional="YES" attributeType="String"/>
+        <attribute name="itemsTotal" optional="YES" attributeType="String"/>
+        <attribute name="loadDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="loaderFirstName" optional="YES" attributeType="String"/>
+        <attribute name="loaderLastName" optional="YES" attributeType="String"/>
+        <attribute name="loaderRecordId" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String"/>
+        <attribute name="palletJackNumber" optional="YES" attributeType="String"/>
+        <attribute name="palletSerialNumber" optional="YES" attributeType="String"/>
+        <attribute name="trailer1Number" optional="YES" attributeType="String"/>
+        <attribute name="trailer2Number" optional="YES" attributeType="String"/>
+        <attribute name="truckNumber" optional="YES" attributeType="String"/>
+        <attribute name="truckRouteRecordId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrailerLoadingHeader" representedClassName="TrailerLoadingHeader" parentEntity="RCOObject" syncable="YES">
+        <attribute name="driverFirstName" optional="YES" attributeType="String"/>
+        <attribute name="driverLastName" optional="YES" attributeType="String"/>
+        <attribute name="driverRecordId" optional="YES" attributeType="String"/>
+        <attribute name="loadDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="loaderFirstName" optional="YES" attributeType="String"/>
+        <attribute name="loaderLastName" optional="YES" attributeType="String"/>
+        <attribute name="loaderRecordId" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="palletJackNumber" optional="YES" attributeType="String"/>
+        <attribute name="trailerNumber" optional="YES" attributeType="String"/>
+        <attribute name="truckNumber" optional="YES" attributeType="String"/>
+        <attribute name="truckRouteRecordId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingBreakLocation" representedClassName="TrainingBreakLocation" parentEntity="Driver" syncable="YES">
+        <attribute name="elapsedMinutes" optional="YES" attributeType="String"/>
+        <attribute name="endDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="headerBarcode" optional="YES" attributeType="String"/>
+        <attribute name="headerObjectId" optional="YES" attributeType="String"/>
+        <attribute name="headerObjectType" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="startDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingCompany" representedClassName="TrainingCompany" parentEntity="RCOObject" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="category1Name" optional="YES" attributeType="String"/>
+        <attribute name="category1Value" optional="YES" attributeType="String"/>
+        <attribute name="category2Name" optional="YES" attributeType="String"/>
+        <attribute name="category2Value" optional="YES" attributeType="String"/>
+        <attribute name="category3Name" optional="YES" attributeType="String"/>
+        <attribute name="category3Value" optional="YES" attributeType="String"/>
+        <attribute name="category4Name" optional="YES" attributeType="String"/>
+        <attribute name="category4Value" optional="YES" attributeType="String"/>
+        <attribute name="category5Name" optional="YES" attributeType="String"/>
+        <attribute name="category5Value" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="companyId" optional="YES" attributeType="String"/>
+        <attribute name="drivingSchool" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingEquipment" representedClassName="TrainingEquipment" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="dolly1Number" optional="YES" attributeType="String"/>
+        <attribute name="dolly2Number" optional="YES" attributeType="String"/>
+        <attribute name="dollyGearType" optional="YES" attributeType="String"/>
+        <attribute name="dollyGearTypeOther" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="lVCLength" optional="YES" attributeType="String"/>
+        <attribute name="lVCLengthOther" optional="YES" attributeType="String"/>
+        <attribute name="lVCType" optional="YES" attributeType="String"/>
+        <attribute name="lVCTypeOther" optional="YES" attributeType="String"/>
+        <attribute name="parentMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="powerUnit" optional="YES" attributeType="String"/>
+        <attribute name="singleTrailerLength" optional="YES" attributeType="String"/>
+        <attribute name="singleTrailerLengthOther" optional="YES" attributeType="String"/>
+        <attribute name="studentDriverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="studentDriverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="trailer1Number" optional="YES" attributeType="String"/>
+        <attribute name="trailer2Number" optional="YES" attributeType="String"/>
+        <attribute name="trailer3Number" optional="YES" attributeType="String"/>
+        <attribute name="transmissionType" optional="YES" attributeType="String"/>
+        <attribute name="transmissionTypeOther" optional="YES" attributeType="String"/>
+        <attribute name="vehicleManufacturer" optional="YES" attributeType="String"/>
+        <attribute name="vehicleManufacturerOther" optional="YES" attributeType="String"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeOther" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingEquipmentReviewed" representedClassName="TrainingEquipmentReviewed" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="dollyGearType" optional="YES" attributeType="String"/>
+        <attribute name="dollyGearTypeNotes" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="equipmentType" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="lVCLength" optional="YES" attributeType="String"/>
+        <attribute name="lVCLengthNotes" optional="YES" attributeType="String"/>
+        <attribute name="lVCType" optional="YES" attributeType="String"/>
+        <attribute name="lVCTypeNotes" optional="YES" attributeType="String"/>
+        <attribute name="parentMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="singleTrailerLength" optional="YES" attributeType="String"/>
+        <attribute name="singleTrailerNotes" optional="YES" attributeType="String"/>
+        <attribute name="studentDriverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="studentDriverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="transmissionType" optional="YES" attributeType="String"/>
+        <attribute name="transmissionTypeNotes" optional="YES" attributeType="String"/>
+        <attribute name="vehicleManufacturer" optional="YES" attributeType="String"/>
+        <attribute name="vehicleManufacturerNotes" optional="YES" attributeType="String"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String"/>
+        <attribute name="vehicleTypeNotes" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingIncidentLocation" representedClassName="TrainingIncidentLocation" parentEntity="TrainingBreakLocation" syncable="YES">
+        <attribute name="incidentType" optional="YES" attributeType="String"/>
+        <attribute name="x" optional="YES" attributeType="String"/>
+        <attribute name="y" optional="YES" attributeType="String"/>
+        <attribute name="z" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingInfo" representedClassName="TrainingInfo" parentEntity="Driver" syncable="YES"/>
+    <entity name="TrainingInstructor" representedClassName="TrainingInstructor" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="correctiveLensRequired" optional="YES" attributeType="String"/>
+        <attribute name="dotExpirationDate1" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="endorsements" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorId" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="studentClass" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingScore" representedClassName="TrainingScore" parentEntity="RCOObject" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="masterMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="pointsPossible" optional="YES" attributeType="String"/>
+        <attribute name="pointsReceived" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="testName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingStudent" representedClassName="TrainingStudent" parentEntity="RCOObject" syncable="YES">
+        <attribute name="category1Name" optional="YES" attributeType="String"/>
+        <attribute name="category1Value" optional="YES" attributeType="String"/>
+        <attribute name="category2Name" optional="YES" attributeType="String"/>
+        <attribute name="category2Value" optional="YES" attributeType="String"/>
+        <attribute name="category3Name" optional="YES" attributeType="String"/>
+        <attribute name="category3Value" optional="YES" attributeType="String"/>
+        <attribute name="category4Name" optional="YES" attributeType="String"/>
+        <attribute name="category4Value" optional="YES" attributeType="String"/>
+        <attribute name="category5Name" optional="YES" attributeType="String"/>
+        <attribute name="category5Value" optional="YES" attributeType="String"/>
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="correctiveLensRequired" optional="YES" attributeType="String"/>
+        <attribute name="dotExpirationDate1" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="endorsements" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="middleName" optional="YES" attributeType="String"/>
+        <attribute name="studentClass" optional="YES" attributeType="String"/>
+        <attribute name="studentId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingTestInfo" representedClassName="TrainingTestInfo" parentEntity="RCOObject" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String"/>
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="correctiveLensRequired" optional="YES" attributeType="String"/>
+        <attribute name="dotExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverHistoryReviewed" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseClass" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String"/>
+        <attribute name="employeeId" optional="YES" attributeType="String"/>
+        <attribute name="endDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endorsements" optional="YES" attributeType="String"/>
+        <attribute name="equipmentType" optional="YES" attributeType="String"/>
+        <attribute name="evaluationLocation" optional="YES" attributeType="String"/>
+        <attribute name="groupName" optional="YES" attributeType="String"/>
+        <attribute name="groupNumber" optional="YES" attributeType="String"/>
+        <attribute name="instructorEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="instructorFirstName" optional="YES" attributeType="String"/>
+        <attribute name="instructorLastName" optional="YES" attributeType="String"/>
+        <attribute name="parentMobileRecordId" optional="YES" attributeType="String"/>
+        <attribute name="pauseDateTimes" optional="YES" attributeType="String"/>
+        <attribute name="pointsPossible" optional="YES" attributeType="String"/>
+        <attribute name="pointsReceived" optional="YES" attributeType="String"/>
+        <attribute name="powerUnit" optional="YES" attributeType="String"/>
+        <attribute name="restrictions" optional="YES" attributeType="String"/>
+        <attribute name="startDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="studentFirstName" optional="YES" attributeType="String"/>
+        <attribute name="studentLastName" optional="YES" attributeType="String"/>
+        <attribute name="trainingAccidentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingAnnual" optional="YES" attributeType="String"/>
+        <attribute name="trainingBehindTheWheel" optional="YES" attributeType="String"/>
+        <attribute name="trainingChangeJob" optional="YES" attributeType="String"/>
+        <attribute name="trainingChangeOfEquipment" optional="YES" attributeType="String"/>
+        <attribute name="trainingEquipment" optional="YES" attributeType="String"/>
+        <attribute name="trainingEye" optional="YES" attributeType="String"/>
+        <attribute name="trainingIncidentFollowUp" optional="YES" attributeType="String"/>
+        <attribute name="trainingInjuryDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingLostTimeStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingNearMiss" optional="YES" attributeType="String"/>
+        <attribute name="trainingNewHire" optional="YES" attributeType="String"/>
+        <attribute name="trainingPassengerEvacuation" optional="YES" attributeType="String"/>
+        <attribute name="trainingPassengerPreTrip" optional="YES" attributeType="String"/>
+        <attribute name="trainingPreTrip" optional="YES" attributeType="String"/>
+        <attribute name="trainingProd" optional="YES" attributeType="String"/>
+        <attribute name="trainingReturnToWorkDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingSWP" optional="YES" attributeType="String"/>
+        <attribute name="trainingTAWEndDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingTAWStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trainingVRT" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TruckRouteDetail" representedClassName="TruckRouteDetail" parentEntity="InfoUser" syncable="YES">
+        <attribute name="actualArrivalDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="actualDepartureDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="billOfLandingRecordId" optional="YES" attributeType="String"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="customerRecordId" optional="YES" attributeType="String"/>
+        <attribute name="leg" optional="YES" attributeType="String"/>
+        <attribute name="markerType" optional="YES" attributeType="String"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String"/>
+        <attribute name="routeType" optional="YES" attributeType="String"/>
+        <attribute name="scheduledArrivalDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="scheduledDepartureDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="shipToAddress" optional="YES" attributeType="String"/>
+        <attribute name="shipToCity" optional="YES" attributeType="String"/>
+        <attribute name="shipToName" optional="YES" attributeType="String"/>
+        <attribute name="shipToState" optional="YES" attributeType="String"/>
+        <attribute name="shipToZip" optional="YES" attributeType="String"/>
+        <attribute name="trailer1Number" optional="YES" attributeType="String"/>
+        <attribute name="trailer2Number" optional="YES" attributeType="String"/>
+        <attribute name="truckNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TruckRouteHeader" representedClassName="TruckRouteHeader" parentEntity="InfoUser" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trailer1Number" optional="YES" attributeType="String"/>
+        <attribute name="trailer2Number" optional="YES" attributeType="String"/>
+        <attribute name="truckNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="User" parentEntity="RCOObject">
+        <attribute name="address1" optional="YES" attributeType="String"/>
+        <attribute name="address2" optional="YES" attributeType="String"/>
+        <attribute name="budget" optional="YES" attributeType="String"/>
+        <attribute name="category1Name" optional="YES" attributeType="String"/>
+        <attribute name="category1Value" optional="YES" attributeType="String"/>
+        <attribute name="category2Name" optional="YES" attributeType="String"/>
+        <attribute name="category2Value" optional="YES" attributeType="String"/>
+        <attribute name="category3Name" optional="YES" attributeType="String"/>
+        <attribute name="category3Value" optional="YES" attributeType="String"/>
+        <attribute name="category4Name" optional="YES" attributeType="String"/>
+        <attribute name="category4Value" optional="YES" attributeType="String"/>
+        <attribute name="category5Name" optional="YES" attributeType="String"/>
+        <attribute name="category5Value" optional="YES" attributeType="String"/>
+        <attribute name="category6Name" optional="YES" attributeType="String"/>
+        <attribute name="category6Value" optional="YES" attributeType="String"/>
+        <attribute name="cell" optional="YES" attributeType="String"/>
+        <attribute name="chartRef" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="clientName" optional="YES" attributeType="String"/>
+        <attribute name="clientNumber" optional="YES" attributeType="String"/>
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="contactName" optional="YES" attributeType="String"/>
+        <attribute name="correctiveLensRequired" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="currentUserIdent" optional="YES" attributeType="String"/>
+        <attribute name="customerNumber" optional="YES" attributeType="String"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateOfHire" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="detractors" optional="YES" attributeType="String"/>
+        <attribute name="discountItem" optional="YES" attributeType="String"/>
+        <attribute name="discountService" optional="YES" attributeType="String"/>
+        <attribute name="dOTExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverDutyStatus" optional="YES" attributeType="String"/>
+        <attribute name="driverELDExempt" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseClass" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseExpirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="driverLicenseNumber" optional="YES" attributeType="String"/>
+        <attribute name="driverLicenseState" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String" maxValueString="1023"/>
+        <attribute name="employeeNumber" optional="YES" attributeType="String"/>
+        <attribute name="endorsements" optional="YES" attributeType="String"/>
+        <attribute name="firstname" optional="YES" attributeType="String"/>
+        <attribute name="growth" optional="YES" attributeType="String"/>
+        <attribute name="homePhoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="jobType" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="leadSource" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="mailcode" optional="YES" attributeType="String"/>
+        <attribute name="managerEmployeeId" optional="YES" attributeType="String"/>
+        <attribute name="managerName" optional="YES" attributeType="String"/>
+        <attribute name="managerRecordId" optional="YES" attributeType="String"/>
+        <attribute name="metricSystem" optional="YES" attributeType="String"/>
+        <attribute name="middleName" optional="YES" attributeType="String"/>
+        <attribute name="mobilePhoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="nationalIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="nextStep" optional="YES" attributeType="String"/>
+        <attribute name="notifyGroupName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="quota" optional="YES" attributeType="String"/>
+        <attribute name="referal" optional="YES" attributeType="String"/>
+        <attribute name="salesTaxRateRecordId" optional="YES" attributeType="String"/>
+        <attribute name="salutation" optional="YES" attributeType="String"/>
+        <attribute name="sendGPSLocation" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="sex" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <attribute name="territory" optional="YES" attributeType="String"/>
+        <attribute name="timerAutoSync" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="userGroupName" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+        <attribute name="userIdent" optional="YES" attributeType="String"/>
+        <attribute name="userNotes1" optional="YES" attributeType="String"/>
+        <attribute name="userNotes2" optional="YES" attributeType="String"/>
+        <attribute name="userNumber" optional="YES" attributeType="String"/>
+        <attribute name="userType" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <attribute name="workPhoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="String" maxValueString="13"/>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="AccidentIncidentReport" positionX="54" positionY="207" width="128" height="330"/>
+        <element name="AccidentRecord" positionX="27" positionY="180" width="128" height="88"/>
+        <element name="AccidentTrailerDollie" positionX="27" positionY="180" width="128" height="150"/>
+        <element name="AccidentVehicle" positionX="27" positionY="180" width="128" height="540"/>
+        <element name="AccidentVehicleReport" positionX="36" positionY="189" width="128" height="900"/>
+        <element name="AccidentWitness" positionX="27" positionY="180" width="128" height="45"/>
+        <element name="AccidentWorkForceNotification" positionX="45" positionY="198" width="128" height="180"/>
+        <element name="AlertGroup" positionX="27" positionY="180" width="128" height="120"/>
+        <element name="Attachment" positionX="27" positionY="180" width="128" height="43"/>
+        <element name="BillOfLadingDetail" positionX="54" positionY="207" width="128" height="283"/>
+        <element name="BillOfLadingHeader" positionX="63" positionY="216" width="128" height="613"/>
+        <element name="Deleted" positionX="36" positionY="81" width="128" height="45"/>
+        <element name="Driver" positionX="9" positionY="54" width="128" height="165"/>
+        <element name="DriverApplicationDetail" positionX="45" positionY="198" width="128" height="88"/>
+        <element name="DriverApplicationHeader" positionX="36" positionY="189" width="128" height="598"/>
+        <element name="DriverEmployment" positionX="27" positionY="180" width="128" height="358"/>
+        <element name="DriverMedicalForm" positionX="36" positionY="189" width="128" height="1768"/>
+        <element name="DriverSkillPerformanceEvaluation" positionX="45" positionY="198" width="128" height="418"/>
+        <element name="DriverTurn" positionX="45" positionY="90" width="128" height="208"/>
+        <element name="DriverViolationDetail" positionX="63" positionY="216" width="128" height="88"/>
+        <element name="DriverViolationHeader" positionX="54" positionY="207" width="128" height="193"/>
+        <element name="EyeMovement" positionX="45" positionY="90" width="128" height="403"/>
+        <element name="FormI9" positionX="27" positionY="180" width="128" height="1168"/>
+        <element name="InfoGeoLocation" positionX="36" positionY="81" width="128" height="73"/>
+        <element name="InfoUser" positionX="-18" positionY="27" width="128" height="163"/>
+        <element name="InvoiceDetail" positionX="36" positionY="189" width="128" height="463"/>
+        <element name="InvoiceHeader" positionX="45" positionY="198" width="128" height="898"/>
+        <element name="Note" positionX="9" positionY="54" width="128" height="45"/>
+        <element name="Part" positionX="27" positionY="180" width="128" height="688"/>
+        <element name="Photo" positionX="9" positionY="54" width="128" height="120"/>
+        <element name="RCOCloud" positionX="36" positionY="189" width="128" height="75"/>
+        <element name="RCOCloudEFile" positionX="27" positionY="180" width="128" height="60"/>
+        <element name="RCOCloudFolder" positionX="45" positionY="198" width="128" height="45"/>
+        <element name="RCOObject" positionX="27" positionY="72" width="128" height="613"/>
+        <element name="SignatureDetail" positionX="45" positionY="90" width="128" height="225"/>
+        <element name="TestDataDetail" positionX="27" positionY="72" width="128" height="358"/>
+        <element name="TestDataHeader" positionX="9" positionY="54" width="128" height="808"/>
+        <element name="TestForm" positionX="54" positionY="99" width="128" height="643"/>
+        <element name="TestSetup" positionX="54" positionY="99" width="128" height="105"/>
+        <element name="Timestamp" positionX="63" positionY="108" width="128" height="45"/>
+        <element name="TrailerLoadingDetail" positionX="27" positionY="180" width="128" height="358"/>
+        <element name="TrailerLoadingHeader" positionX="36" positionY="189" width="128" height="223"/>
+        <element name="TrainingBreakLocation" positionX="27" positionY="180" width="128" height="238"/>
+        <element name="TrainingCompany" positionX="27" positionY="180" width="128" height="298"/>
+        <element name="TrainingEquipment" positionX="27" positionY="180" width="128" height="508"/>
+        <element name="TrainingEquipmentReviewed" positionX="27" positionY="180" width="128" height="418"/>
+        <element name="TrainingIncidentLocation" positionX="27" positionY="180" width="128" height="103"/>
+        <element name="TrainingInfo" positionX="36" positionY="189" width="128" height="43"/>
+        <element name="TrainingInstructor" positionX="63" positionY="108" width="128" height="225"/>
+        <element name="TrainingScore" positionX="27" positionY="180" width="128" height="268"/>
+        <element name="TrainingStudent" positionX="45" positionY="90" width="128" height="390"/>
+        <element name="TrainingTestInfo" positionX="27" positionY="180" width="128" height="793"/>
+        <element name="TruckRouteDetail" positionX="27" positionY="180" width="128" height="343"/>
+        <element name="TruckRouteHeader" positionX="36" positionY="189" width="128" height="103"/>
+        <element name="User" positionX="45" positionY="198" width="128" height="1303"/>
+    </elements>
+</model>

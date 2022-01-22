@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDPhotosViewController">
+            <connections>
+                <outlet property="tableView" destination="jII-RN-cQJ" id="ID7-p6-REY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jII-RN-cQJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lXy-XY-GYR"/>
+                        <outlet property="delegate" destination="-1" id="Oan-Ju-b2L"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXD-GR-Cvo">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Sync Photos" id="eqf-qr-Znv">
+                            <connections>
+                                <action selector="syncPhotos:" destination="-1" id="WoQ-P8-bap"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jXD-GR-Cvo" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="8LZ-de-0xG"/>
+                <constraint firstItem="jII-RN-cQJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="An3-gc-0OO"/>
+                <constraint firstItem="jXD-GR-Cvo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="bottom" constant="-44" id="Irh-m5-xgI"/>
+                <constraint firstItem="jII-RN-cQJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N1D-bE-zW2"/>
+                <constraint firstItem="jII-RN-cQJ" firstAttribute="bottom" secondItem="jXD-GR-Cvo" secondAttribute="top" id="anx-Wy-kLs"/>
+                <constraint firstItem="jII-RN-cQJ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="jx8-1L-d4L"/>
+                <constraint firstItem="jXD-GR-Cvo" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="kT3-7v-4CO"/>
+                <constraint firstItem="jXD-GR-Cvo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nue-gV-Fdf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-151.19999999999999" y="61.619190404797607"/>
+        </view>
+    </objects>
+</document>

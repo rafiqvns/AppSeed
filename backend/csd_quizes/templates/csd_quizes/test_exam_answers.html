@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+   {{ answers.count }}
+</div>
+<div>
+    <ul>
+        {% for answer in answers %}
+            <li>{{ forloop.counter }}: ID: {{ answer.id }} => {{ answer }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>

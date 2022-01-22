@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDDashboardViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqB-RN-gk5">
+                    <rect key="frame" x="20" y="75" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="UbY-3E-Gin"/>
+                        <constraint firstAttribute="height" constant="80" id="d9v-ci-qye"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="UbY-3E-Gin"/>
+                            <exclude reference="d9v-ci-qye"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="UbY-3E-Gin"/>
+                            <include reference="d9v-ci-qye"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-Th-LRM">
+                    <rect key="frame" x="337" y="39" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="J8a-VW-Okw"/>
+                        <constraint firstAttribute="height" constant="80" id="ysW-5n-SIU"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="J8a-VW-Okw"/>
+                            <exclude reference="ysW-5n-SIU"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="J8a-VW-Okw"/>
+                            <include reference="ysW-5n-SIU"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79v-6E-1uA">
+                    <rect key="frame" x="125" y="277" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="cRG-bv-CcU"/>
+                        <constraint firstAttribute="width" constant="100" id="r4g-bT-3IT"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cRG-bv-CcU"/>
+                            <exclude reference="r4g-bT-3IT"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="cRG-bv-CcU"/>
+                            <include reference="r4g-bT-3IT"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jok-of-rNM">
+                    <rect key="frame" x="20" y="277" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="L8w-Kg-m1G"/>
+                        <constraint firstAttribute="width" constant="100" id="ewH-H0-AQG"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="L8w-Kg-m1G"/>
+                            <exclude reference="ewH-H0-AQG"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="L8w-Kg-m1G"/>
+                            <include reference="ewH-H0-AQG"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-t5-PcV">
+                    <rect key="frame" x="200" y="277" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="b29-sp-yLH"/>
+                        <constraint firstAttribute="height" constant="80" id="e6K-Go-ozV"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="b29-sp-yLH"/>
+                            <exclude reference="e6K-Go-ozV"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="b29-sp-yLH"/>
+                            <include reference="e6K-Go-ozV"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyC-WC-GQT">
+                    <rect key="frame" x="110" y="88" width="100" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="fJ1-ww-AnD"/>
+                        <constraint firstAttribute="height" constant="80" id="qAt-jM-bLW"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fJ1-ww-AnD"/>
+                            <exclude reference="qAt-jM-bLW"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fJ1-ww-AnD"/>
+                            <include reference="qAt-jM-bLW"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uTE-t5-PcV" firstAttribute="baseline" secondItem="79v-6E-1uA" secondAttribute="baseline" id="Hgs-dX-A6s"/>
+                <constraint firstItem="Deo-Th-LRM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VeI-LP-YFB"/>
+                <constraint firstItem="79v-6E-1uA" firstAttribute="top" secondItem="Deo-Th-LRM" secondAttribute="bottom" constant="61" id="cch-2Y-4ZJ"/>
+                <constraint firstItem="HqB-RN-gk5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="fmL-VJ-tC2"/>
+                <constraint firstItem="Deo-Th-LRM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="fun-t9-cxr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JyC-WC-GQT" secondAttribute="trailing" constant="46" id="jkl-pO-5gg"/>
+                <constraint firstItem="JyC-WC-GQT" firstAttribute="baseline" secondItem="HqB-RN-gk5" secondAttribute="baseline" id="pdq-5C-goo"/>
+                <constraint firstItem="Deo-Th-LRM" firstAttribute="top" secondItem="HqB-RN-gk5" secondAttribute="bottom" constant="67" id="snx-hM-wki"/>
+                <constraint firstItem="Deo-Th-LRM" firstAttribute="baseline" secondItem="Jok-of-rNM" secondAttribute="baseline" id="uK0-eh-oXd"/>
+                <constraint firstItem="79v-6E-1uA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="45" id="vTA-ET-nDj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Jok-of-rNM" secondAttribute="trailing" constant="35" id="vvr-FO-BRo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uTE-t5-PcV" secondAttribute="trailing" constant="35" id="wGU-4K-w7i"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jkl-pO-5gg"/>
+                    <exclude reference="vvr-FO-BRo"/>
+                    <exclude reference="wGU-4K-w7i"/>
+                    <exclude reference="fmL-VJ-tC2"/>
+                    <exclude reference="fun-t9-cxr"/>
+                    <exclude reference="vTA-ET-nDj"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="jkl-pO-5gg"/>
+                    <include reference="vvr-FO-BRo"/>
+                    <include reference="wGU-4K-w7i"/>
+                    <include reference="fmL-VJ-tC2"/>
+                    <include reference="fun-t9-cxr"/>
+                    <include reference="vTA-ET-nDj"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-395" y="-53"/>
+        </view>
+    </objects>
+</document>

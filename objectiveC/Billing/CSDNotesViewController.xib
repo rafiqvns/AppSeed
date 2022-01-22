@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSDNotesViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="AbF-Ex-yxd" id="uJl-cy-gbQ"/>
+                <outlet property="tableView" destination="rFv-D8-0en" id="cbM-zW-a6q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rFv-D8-0en">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tx0-iM-hjo"/>
+                        <outlet property="delegate" destination="-1" id="v4b-8o-Uky"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-Ex-yxd">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="add" id="6bU-J5-8Vi">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="-1" id="Evs-wS-ApL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="2hS-Sv-kjU"/>
+                        <barButtonItem style="plain" id="DVg-Dt-yyE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Dp3-rn-dF4">
+                                <rect key="frame" x="334" y="10" width="25" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="-1" eventType="touchUpInside" id="JH1-K6-lZO"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="7Rx-Oc-uET"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="H0J-5p-3gh"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="bottom" secondItem="AbF-Ex-yxd" secondAttribute="top" id="bHx-Um-iis"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fXt-Qk-Inh"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="bottom" secondItem="DNZ-PV-vih" secondAttribute="bottom" id="jKn-Oc-kgG"/>
+                <constraint firstItem="rFv-D8-0en" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lZh-ts-zed"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="top" secondItem="DNZ-PV-vih" secondAttribute="bottom" constant="-44" id="qpS-W1-e0l"/>
+                <constraint firstItem="AbF-Ex-yxd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rM2-UC-pD3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DNZ-PV-vih"/>
+            <point key="canvasLocation" x="325.5" y="278.5"/>
+        </view>
+    </objects>
+</document>

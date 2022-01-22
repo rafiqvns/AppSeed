@@ -1,0 +1,70 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - BRYXBanner (0.8.4)
+  - DACircularProgress (2.3.1)
+  - ImagePicker (3.1.0)
+  - ImageSlideshow (1.8.3):
+    - ImageSlideshow/Core (= 1.8.3)
+  - ImageSlideshow/Alamofire (1.8.3):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.8.3)
+  - ImageSlideshow/SDWebImage (1.8.3):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - MBProgressHUD (0.9.2)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+
+DEPENDENCIES:
+  - BRYXBanner
+  - DACircularProgress (~> 2.3)
+  - ImagePicker
+  - ImageSlideshow
+  - ImageSlideshow/Alamofire
+  - ImageSlideshow/SDWebImage
+  - MBProgressHUD (~> 0.9)
+  - MWPhotoBrowser (from `https://github.com/mwaterfall/MWPhotoBrowser.git`)
+  - SDWebImage (~> 3.8)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - BRYXBanner
+    - DACircularProgress
+    - ImagePicker
+    - ImageSlideshow
+    - MBProgressHUD
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  MWPhotoBrowser:
+    :git: https://github.com/mwaterfall/MWPhotoBrowser.git
+
+CHECKOUT OPTIONS:
+  MWPhotoBrowser:
+    :commit: 66ddd73859978a9c24c6ce014634f3bde351e917
+    :git: https://github.com/mwaterfall/MWPhotoBrowser.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  BRYXBanner: 4fbd266f96ce000e4c6cc9a0558c446bd88d9801
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+
+PODFILE CHECKSUM: 14e6af6eb8cff717f3f7f7da772a085725dbbb3a
+
+COCOAPODS: 1.11.2
